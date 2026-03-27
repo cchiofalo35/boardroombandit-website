@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Boardroom Bandit</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        :root { --bg: #0A0E17; --bg-card: rgba(15,20,35,0.8); --cyan: #00F0FF; --magenta: #FF2D78; --text: #E2E8F0; --text-muted: #94A3B8; --border: rgba(0,255,255,0.12); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); background: var(--bg); }
+        .page { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+        .back { display: inline-flex; align-items: center; gap: 6px; color: var(--cyan); text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 32px; }
+        .back:hover { text-decoration: underline; }
+        h1 { font-size: 36px; font-weight: 900; margin-bottom: 8px; letter-spacing: -1px; }
+        .subtitle { color: var(--text-muted); font-size: 16px; margin-bottom: 48px; }
+        h2 { font-size: 20px; font-weight: 700; margin-top: 36px; margin-bottom: 16px; }
+        p { font-size: 15px; line-height: 1.7; color: var(--text-muted); margin-bottom: 16px; }
+        a { color: var(--cyan); }
+
+        /* Contact card */
+        .contact-card { background: var(--bg-card); border-radius: 16px; padding: 28px; border: 1px solid var(--border); margin-bottom: 32px; backdrop-filter: blur(10px); }
+        .contact-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+        .contact-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .contact-item:last-child { border-bottom: none; }
+        .contact-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+        .contact-item a { color: var(--cyan); text-decoration: none; font-weight: 600; font-size: 15px; }
+        .contact-item a:hover { text-decoration: underline; }
+        .contact-item .label { font-size: 12px; color: var(--text-muted); }
+        .contact-item .value { font-weight: 600; color: var(--text); font-size: 15px; }
+
+        /* FAQ */
+        .faq-item { background: var(--bg-card); border-radius: 14px; padding: 20px 24px; border: 1px solid var(--border); margin-bottom: 12px; backdrop-filter: blur(10px); transition: border-color 0.2s; }
+        .faq-item:hover { border-color: rgba(0, 240, 255, 0.25); }
+        .faq-item h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+        .faq-item p { margin-bottom: 0; font-size: 14px; }
+
+        .footer-note { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: #64748B; }
+        .footer-note a { color: #64748B; text-decoration: none; }
+        .footer-note a:hover { color: var(--cyan); }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="/" class="back">&larr; Back to Boardroom Bandit</a>
+        <h1>Support</h1>
+        <p class="subtitle">Need help conquering the boardroom? We\'ve got you covered.</p>
+
+        <!-- Contact -->
+        <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-item">
+                <div class="contact-icon" style="background: rgba(0,240,255,0.1);">&#x2709;&#xFE0F;</div>
+                <div>
+                    <div class="label">Email Support</div>
+                    <a href="mailto:support@boardroombandit.com">support@boardroombandit.com</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon" style="background: rgba(255,45,120,0.1);">&#x1F4AC;</div>
+                <div>
+                    <div class="label">Response Time</div>
+                    <div class="value">Within 48 hours</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do I get started?</h3>
+            <p>Launch the game, choose your company name, and select your starting sector. You\'ll begin with a small cash balance — invest wisely in assets to start generating income, then expand into new sectors as you grow.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What are the five sectors?</h3>
+            <p>Finance, Media, Resources, Travel, and Fashion. Each sector has 10 asset levels to unlock. Combining sectors unlocks powerful synergy bonuses — for example, owning Finance and Media gives you the "Media Mogul" bonus.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How does deal negotiation work?</h3>
+            <p>When you enter a deal, you choose from four strategies: Aggressive, Balanced, Conservative, or Bluff. Each strategy has different risk/reward trade-offs. The outcome depends on your strategy choice and a bit of luck.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What are hostile takeovers?</h3>
+            <p>Once you\'re powerful enough, you can launch takeover bids against rival corporations. The takeover battle plays out with animated share acquisition — you\'ll need enough capital and strategy to win control.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How does the staff system work?</h3>
+            <p>Recruit named staff members across six departments. Each staff member has unique traits and a morale level that decays over time. You can boost morale or fire underperformers. Strong staff increase your income and deal success rates.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What is the Prestige system?</h3>
+            <p>When you reach level 15, you can "prestige" — reset your progress in exchange for a permanent income multiplier. Each prestige loop makes your next run exponentially more powerful. It\'s the key to reaching the highest achievement tiers.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do daily challenges work?</h3>
+            <p>New challenges rotate each day with cash reward objectives. Complete them to earn bonus income on top of your regular asset earnings. They\'re a great way to accelerate growth and keep gameplay fresh.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What are market events?</h3>
+            <p>Random events like bull runs, recessions, scandals, and tech booms affect asset prices and income. These force you to adapt your strategy on the fly — a recession might tank your Finance holdings while boosting Resources.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is my game data saved?</h3>
+            <p>Yes — all progress is saved locally on your device automatically. However, if you uninstall the App, all data will be permanently deleted. We recommend being careful with the prestige reset if you\'re not ready to start over.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>I found a bug. How do I report it?</h3>
+            <p>Email us at <a href="mailto:support@boardroombandit.com">support@boardroombandit.com</a> with a description of the issue, your device model, and OS version. Screenshots or screen recordings are very helpful.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I request a refund for in-app purchases?</h3>
+            <p>In-app purchases are processed by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> and follow Apple\'s refund process.</p>
+        </div>
+
+        <div class="footer-note">
+            &copy; 2026 Zorro Apps. All rights reserved.<br>
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+    </div>
+</body>
+</html>
